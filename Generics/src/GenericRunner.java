@@ -17,5 +17,6 @@ public class GenericRunner {
         StaigingMaintancePost<Transport> holder = new StaigingMaintancePost<>(src);
         holder.printStatistic();
         holder.runAll();
+
     }
 }
