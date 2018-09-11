@@ -12,6 +12,7 @@ public class SetAddTester {
 
         BigDecimal salary = new BigDecimal(2000);
         Human human_1 = new Human(27, "Vladyslav", "Zakharhevskyi", salary);
+        human_1.setId("First");
         System.out.println("Hash First: " + human_1.toString());
         people.add(human_1);
 
@@ -21,7 +22,9 @@ public class SetAddTester {
 
 
         Human human_3= new Human(27, "Vladyslav", "Zakharhevskyi", salary);
+        human_3.setId("Second");
         System.out.println("Hash Third: " + human_3.toString());
+
         people.add(human_3);
 
 

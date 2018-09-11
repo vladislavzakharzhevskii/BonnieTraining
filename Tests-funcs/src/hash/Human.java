@@ -10,6 +10,8 @@ public class Human {
     private String surname;
     private BigDecimal salary;
 
+    private String id = "identefy with value: ";
+
     public Human(Integer age, String name, String surname, BigDecimal salary) {
         this.age = age;
         this.name = name;
@@ -48,4 +50,14 @@ public class Human {
     public int hashCode() {
         return Objects.hash(age, name, surname, salary);
     }
+
+    public void setId(String idPrefix) {
+        this.id += idPrefix;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString().concat(" "+this.id);
+    }
+
 }
