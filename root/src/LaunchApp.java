@@ -7,14 +7,18 @@ public class LaunchApp {
     */
     public static void main(String[] args) {
         try {
-            Runner.runGenerics(userName);
+//            Runner.runGenerics(userName);
+            Runner.runTestsFunc();
 
-        } catch (IncompatibleTypeException e) {
+        } /*catch (IncompatibleTypeException e) {
             System.out.println("Error Occured. Exception: IncompatibleTypeException");
             e.printStackTrace();
         } catch (Exception e) {
             System.out.println("Error Occured. Exception: Exception");
             e.printStackTrace();
+        }*/
+        finally {
+            System.out.print("SFix.");
         }
 
     }
